@@ -28,4 +28,32 @@ fun main(args: Array<String>) {
         b
     }
     println(max);
+//    when的写法
+//    var x:Int=1325;
+//    when(x){
+//        1->println("x=1");
+//        2->println("x=2");
+//        else->{//这块的写法是比较特殊的
+//            println("不是一也不是二");
+//        }
+//    }
+//综合实例
+    var x = 0
+    when (x) {
+        0, 1 -> println("x == 0 or x == 1")
+        else -> println("otherwise")
+    }
+
+    when (x) {
+        1 -> println("x == 1")
+        2 -> println("x == 2")
+        else -> { // 注意这个块
+            println("x 不是 1 ，也不是 2")
+        }
+    }
+
+    when (x) {
+        in 0..10 -> println("x 在该区间范围内")
+        else -> println("x 不在该区间范围内")
+    }
 }
