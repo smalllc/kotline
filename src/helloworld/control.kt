@@ -56,4 +56,10 @@ fun main(args: Array<String>) {
         in 0..10 -> println("x 在该区间范围内")
         else -> println("x 不在该区间范围内")
     }
+
+    val items = setOf("apple", "banana", "kiwi")//定义了一个集合
+    when {
+        "orange" in items -> println("juicy")
+        "apple" in items -> println("apple is fine too")
+    }
 }
