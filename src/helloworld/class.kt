@@ -27,7 +27,11 @@ public class Runoob{
 //
 //}
 //定义一个空类
-class Empty // {} 都可以不加
+class Empty constructor(name:String){
+    init{
+        println("FirstName is $name")
+    }
+} //空类什么都可以不加
 
 
 fun main(args: Array<String>) {
@@ -42,4 +46,5 @@ fun main(args: Array<String>) {
     println(Runoob().get())//匿名类
 
 //    println(Person("悟空").test())
+    Empty("雷打不动") //匿名使用
 }
