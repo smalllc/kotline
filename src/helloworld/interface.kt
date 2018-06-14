@@ -53,6 +53,8 @@ class D : A, B {
 }
 
 
+
+
 fun main(args: Array<String>) {
     //测试
     var iTestImpl=iTestImpl()
@@ -63,4 +65,6 @@ fun main(args: Array<String>) {
     val d =  D()
     d.foo();
     d.bar();
+
 }
+
