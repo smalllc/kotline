@@ -1,6 +1,6 @@
 package helloworld
 
-import java.util.*
+import java.util.Date;
 
 
 
@@ -15,6 +15,9 @@ public class Runoob{
         println(this.currentTime::class)
         return this.name
     }
+    constructor(empty:Empty){
+       empty.name=this.name
+    }
 
 }
 //构造器
@@ -28,6 +31,7 @@ public class Runoob{
 //}
 //定义一个空类
 class Empty constructor(name:String){
+    var name=name
     init{
         println("FirstName is $name")
     }
@@ -40,11 +44,11 @@ fun main(args: Array<String>) {
     list.add("smallchuan")
 
     println(list)
-    var rb=Runoob() //在内存中划分出一个空间出来
+    var gg=Empty("雷打不动") //匿名使用
+    var rb=Runoob(gg) //在内存中划分出一个空间出来
     println(rb.currentTime)
 
-    println(Runoob().get())//匿名类
+    println(Runoob(gg).get())//匿名类
 
 //    println(Person("悟空").test())
-    Empty("雷打不动") //匿名使用
 }
